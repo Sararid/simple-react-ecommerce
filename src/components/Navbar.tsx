@@ -54,7 +54,7 @@ const Navbar: FC = () => {
             <Link
               to="/products"
               className="text-xl font-bold"
-              data-test="main-products"
+              data-testid="main-products"
             >
               Products
             </Link>
@@ -158,7 +158,7 @@ const Navbar: FC = () => {
               <Link
                 to="/products"
                 className="text-2xl font-bold dark:text-white hover:opacity-80"
-                data-test="main-products"
+                data-testid="main-products"
                 onClick={handleLinkClick}
               >
                 Products
@@ -209,7 +209,7 @@ const Navbar: FC = () => {
                 }}
                 data-test="cart-btn"
               >
-                <div className="relative">
+                <div className="relative" data-testid="cart-icon">
                   <AiOutlineShoppingCart className="text-3xl dark:text-white" />
                   <div
                     className="absolute top-[-10px] right-[-10px] bg-red-600 w-[20px] h-[20px] rounded-full text-white text-[12px] grid place-items-center"

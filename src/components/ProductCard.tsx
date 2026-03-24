@@ -41,7 +41,7 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div className="border border-gray-200 font-lato" data-test="product-card">
+    <div className="border border-gray-200 font-lato" data-testid="product-card">
       <div className="text-center border-b border-gray-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img
@@ -74,7 +74,7 @@ const ProductCard: FC<Product> = ({
           type="button"
           className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
           onClick={addCart}
-          data-test="add-cart-btn"
+          data-testid="add-cart-btn"
           title="ADD TO CART"
         >
           <AiOutlineShoppingCart />

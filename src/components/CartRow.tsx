@@ -38,7 +38,7 @@ const CartRow: FC<CartItem> = ({
           )}
         </div>
 
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-1" data-testid="add-item">
           <IoIosRemoveCircleOutline
             className="cursor-pointer hover:opacity-80"
             onClick={() => dispatch(reduceFromCart(id))}
@@ -47,7 +47,7 @@ const CartRow: FC<CartItem> = ({
           <span data-test="cart-item-quantity">{quantity}</span>
           <IoIosAddCircleOutline
             className="cursor-pointer hover:opacity-80"
-            data-test="cart-increase-btn"
+            data-testid="cart-increase-btn"
             onClick={() =>
               dispatch(
                 addToCart({
@@ -64,7 +64,7 @@ const CartRow: FC<CartItem> = ({
           />
         </div>
       </div>
-      <div className="font-bold col-span-2">
+      <div className="font-bold col-span-2"  data-testid="remove-item">
         {quantity && (
           <span data-test="cart-item-price">
             ${(result * quantity).toFixed(2)}
@@ -73,7 +73,7 @@ const CartRow: FC<CartItem> = ({
         <RiDeleteBin6Line
           className="text-red-500 cursor-pointer text-2xl hover:text-red-600"
           onClick={() => dispatch(removeFromCart(id))}
-          data-test="cart-remove-btn"
+          data-testid="cart-remove-btn"
         />
       </div>
     </div>

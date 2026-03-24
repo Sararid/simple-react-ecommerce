@@ -54,7 +54,7 @@ const Cart: FC = () => {
               <span
                 className="w-1/2 border border-gray-500 rounded cursor-pointer text-center py-1"
                 onClick={handleOrder}
-                data-test="confirm-order-btn"
+                data-testid="confirm-order-btn"
               >
                 Confirm
               </span>
@@ -91,7 +91,7 @@ const Cart: FC = () => {
                 </div>
                 <button
                   type="button"
-                  data-test="checkout-btn"
+                  data-testid="checkout-btn"
                   onClick={() => setCheckout(true)}
                   className="w-full text-center text-white bg-blue-500 py-2 my-4 rounded font-bold text-xl hover:bg-blue-700"
                 >
