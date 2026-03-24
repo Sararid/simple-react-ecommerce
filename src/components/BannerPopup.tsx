@@ -25,6 +25,7 @@ const BannerPopup: FC = () => {
             dispatch(updateBanner(false));
             localStorage.setItem("isBannerVisibleClosed", "true");
           }}
+          data-testid="banner-popup"
           className="absolute top-0 right-0 m-2 bg-white rounded-full p-2"
         >
           ✖
