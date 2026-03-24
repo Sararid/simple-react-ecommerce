@@ -42,7 +42,7 @@ const CartRow: FC<CartItem> = ({
           <IoIosRemoveCircleOutline
             className="cursor-pointer hover:opacity-80"
             onClick={() => dispatch(reduceFromCart(id))}
-            data-test="cart-reduce-btn"
+            data-testid="cart-reduce-btn"
           />
           <span data-test="cart-item-quantity">{quantity}</span>
           <IoIosAddCircleOutline

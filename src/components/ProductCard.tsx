@@ -41,7 +41,7 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div className="border border-gray-200 font-lato" data-testid="product-card">
+    <div className="border border-gray-200 font-lato">
       <div className="text-center border-b border-gray-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img
@@ -59,6 +59,7 @@ const ProductCard: FC<Product> = ({
           className="font-semibold hover:underline dark:text-white overflow-hidden text-ellipsis whitespace-nowrap block"
           to={{ pathname: `/product/${id}` }}
           title={title}
+          data-testid="product-card"
         >
           {title}
         </Link>
