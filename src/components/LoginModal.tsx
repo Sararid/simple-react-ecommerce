@@ -59,7 +59,7 @@ const LoginModal: FC = () => {
               <form onSubmit={submitForm} className="flex flex-col space-y-3">
                 <div className="relative">
                   <input
-                    data-test="input-username"
+                    data-testid="input-username"
                     type="text"
                     placeholder="Your username here... (atuny0)"
                     className="border w-full border-black py-2 px-8 rounded dark:bg-slate-600"
@@ -70,7 +70,7 @@ const LoginModal: FC = () => {
                 </div>
                 <div className="relative">
                   <input
-                    data-test="input-password"
+                    data-testid="input-password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
@@ -80,7 +80,7 @@ const LoginModal: FC = () => {
                   <RiLockPasswordFill className="absolute top-3 left-2 text-lg" />
                 </div>
                 <input
-                  data-test="input-submit"
+                  data-testid="input-submit"
                   type="submit"
                   value="Submit"
                   className="bg-blue-500 text-white rounded p-2 hover:bg-blue-700 cursor-pointer"

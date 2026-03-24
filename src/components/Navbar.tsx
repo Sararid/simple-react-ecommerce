@@ -82,7 +82,7 @@ const Navbar: FC = () => {
                   <span
                     className="cursor-pointer hover:opacity-85 dark:text-white"
                     onClick={() => dispatch(updateModal(true))}
-                    data-test="login-btn"
+                    data-testid="login-btn"
                   >
                   </span>
                 )}
@@ -91,7 +91,7 @@ const Navbar: FC = () => {
             <div
               className="text-gray-500 text-[32px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}
-              data-test="cart-btn"
+              data-testid="cart-btn"
             >
               <AiOutlineShoppingCart className="dark:text-white" />
               <div
@@ -193,7 +193,7 @@ const Navbar: FC = () => {
                         dispatch(updateModal(true));
                         setIsMenuOpen(false);
                       }}
-                      data-test="login-btn"
+                      data-testid="login-btn"
                     >
                       Profile
                     </span>
