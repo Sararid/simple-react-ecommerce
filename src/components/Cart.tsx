@@ -78,7 +78,7 @@ const Cart: FC = () => {
                 items.map((item) => <CartRow key={item.id} {...item} />)
               ) : (
                 <div className="flex flex-col justify-center items-center p-4">
-                  <img src="/emptyCart.jpg" alt="empty" className="w-40" />
+                  <img src="./emptyCart.jpg" alt="empty" className="w-40" />
                   <p className="text-center text-xl my-2">Your cart is empty</p>
                 </div>
               )}
